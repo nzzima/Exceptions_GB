@@ -1,1 +1,1 @@
-Exceptions lessons from GB
+Exceptions lessons from GeekBrains
