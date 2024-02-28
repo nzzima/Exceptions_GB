@@ -14,6 +14,7 @@ public class Main {
     public static void main(String[] args) {
         enterValues();
         checkParsedValues();
+        writeToFile();
     }
 
     public static void enterValues() {
@@ -49,8 +50,10 @@ public class Main {
                 userValues.append(arrayUserValue).append(" ");
             }
             fileWriter.write(userValues.toString());
+            fileWriter.write("\n");
+            fileWriter.flush();
         } catch (IOException error) {
-            System.out.println(error.getMessage());
+            error.printStackTrace();
         }
     }
 }
